@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mikulás Weboldal" />
+    <meta name="keywords" content="Mikulás, gyakorlás" />
+    <title>Paulusz Kristóf</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div id="fejl">
+        <header>Mikulás Házhoz Megy!</header>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">A Mikulásról</a></li>
+          <li><a href="urlap.html">Megrendelő</a></li>
+          <li><a href="#">Külső Link</a></li>
+        </ul>
+      </nav>
+      <article>
+        <form>
+          <h3>Amit a mikulásnak tudnia kell</h3>
+          <label for="pname">Megrendelő neve: <strong>*</strong> </label><br />
+          <input type="text" id="pname" name="pname" /><br />
+          <label for="cname">Cég neve:<strong>*</strong> </label><br />
+          <input type="text" id="cname" name="cname" /><br />
+          <label for="email">E-mail cím:<strong>*</strong> </label><br />
+          <input type="text" id="email" name="email" /><br />
+
+          <label for="szamla">Számlázási név, cím:<strong>*</strong> </label
+          ><br />
+          <textarea name="szamla" id="szamla" cols="50" rows="6"></textarea
+          ><br />
+
+          <label for="visit">Látogatási cím: <strong>*</strong> </label><br />
+          <textarea name="visit" id="visit" cols="50" rows="6"></textarea><br />
+          <label for="pop">Létszám: <strong>*</strong> </label><br />
+          <input type="text" id="pop" name="pop" /><br />
+          <label for="info">Fontosabb tudnivalok</label><br />
+          <textarea name="info" id="info" cols="50" rows="6"></textarea><br />
+          <label for="else">Kérés, bármilyen megjegyzés</label><br />
+          <textarea name="else" id="else" cols="50" rows="6"></textarea><br />
+          <label for="date">Időpont</label><br />
+          <input type="text" id="date" name="date" /><br />
+          <label for="time">Óra</label> <br />
+          <input
+            type="time"
+            id="time"
+            name="time"
+            min="09:00"
+            max="18:00"
+            required
+          />
+          <br />
+          <label for="req">Elfogadás<strong>*</strong></label
+          ><br />
+          <p style="font-size: 80%">A felhasználási feltételeket elfogadom.</p>
+          <input type="checkbox" id="req" name="req" /><br>
+          <fieldset id="fs">
+            <legend>Melyik szolgáltatást választod?<strong>*</strong></legend>
+
+            <input
+              type="radio"
+              id="company"
+              name="mikulas"
+              value="company"
+            /><label for="company">Céges Mikulás</label><br />
+
+            <input
+              type="radio"
+              id="worker"
+              name="mikulas"
+              value="worker"
+            /><label for="worker">Dolgozó Mikulás</label><br />
+
+            <input
+              type="radio"
+              id="courier"
+              name="mikulas"
+              value="courier"
+            /><label for="courier">Futár Mikulás</label><br />
+
+            <input type="radio" id="ad" name="mikulas" value="ad" /><label
+              for="ad"
+              >Reklám Mikulás</label
+            ><br />
+          </fieldset>
+        </form>
+      </article>
+      <footer>© Minden jog fenntartva!</footer>
+    </main>
+  </body>
+</html>

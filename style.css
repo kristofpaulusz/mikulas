@@ -1,32 +1,71 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+    background-image: url(picks/hatter.jpg);
 }
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'h'
-                        'n'
-                        'a'
-                        'f';
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h"
+    "n"
+    "a"
+    "f";
+  margin: auto;
+  width: 80%;
+  background: white;
 }
 header {
-    grid-area: h;
+  grid-area: h;
 }
 nav {
-    grid-area: n;
+  grid-area: n;
 }
 article {
-    grid-area: a;
+  grid-area: a;
 }
 footer {
-    grid-area: f;
+  grid-area: f;
 }
-header,
 footer,
-nav,
-main,
-article
+article,
 .urlap {
-    border: 1px solid black;
-    padding: 10px;
+  background: white;
+}
+nav ul li {
+  display: inline;
+  list-style: none;
+  margin: 30px;
+}
+nav ul li a,
+footer {
+  text-decoration: none;
+  color: white;
+}
+nav,
+footer {
+  background-color: red;
+  border: 1px solid white;
+}
+#fejl {
+  background-image: url(picks/szgy_klub_mikulas_bekes_kezdo_20171215.jpg);
+  background-size: cover;
+  height: 100px;
+}
+header {
+    padding-top: 50px;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+form {
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+strong {
+    color: brown;
 }
