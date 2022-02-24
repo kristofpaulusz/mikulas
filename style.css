@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'h'
+                        'n'
+                        'a'
+                        'f';
+}
+header {
+    grid-area: h;
+}
+nav {
+    grid-area: n;
+}
+article {
+    grid-area: a;
+}
+footer {
+    grid-area: f;
+}
+header,
+footer,
+nav,
+main,
+article
+.urlap {
+    border: 1px solid black;
+    padding: 10px;
+}
