@@ -1,8 +1,6 @@
-* {
-  box-sizing: border-box;
-}
 body {
-    background-image: url(picks/hatter.jpg);
+  background-image: url(picks/hatter.jpg);
+  box-sizing: border-box;
 }
 main {
   display: grid;
@@ -13,13 +11,15 @@ main {
     "a"
     "f";
   margin: auto;
-  width: 80%;
+  max-width: 1000px;
   background: white;
 }
 header {
   grid-area: h;
 }
 nav {
+  display: flex;
+  justify-content: space-around;
   grid-area: n;
 }
 article {
@@ -27,6 +27,7 @@ article {
 }
 footer {
   grid-area: f;
+  text-align: center;
 }
 footer,
 article,
@@ -50,22 +51,24 @@ footer {
 }
 #fejl {
   background-image: url(picks/szgy_klub_mikulas_bekes_kezdo_20171215.jpg);
-  background-size: cover;
-  height: 100px;
+  width: 100%;
+  height: 400px;
+  background-size: 100% 100%;
 }
+
 header {
-    padding-top: 50px;
-	color: red;
-	font-size: 20px;
-	text-align: center;
+  padding-top: 50px;
+  color: red;
+  font-size: 20px;
+  text-align: center;
 }
 form {
-    padding: 20px;
-    margin: 10px;
-    width: 80%;
-    background-color: lightgrey;
-    border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  background-color: lightgrey;
+  border-radius: 10px;
 }
 strong {
-    color: brown;
+  color: brown;
 }
